@@ -1,0 +1,70 @@
+/* Estilos generales para ion-content */
+ion-content {
+  --ion-background-color: #121212; /* Fondo oscuro */
+  color: #ffffff; /* Texto blanco */
+}
+
+/* Estilos para ion-toolbar */
+ion-toolbar {
+  --ion-color-base: #121212; /* Color de fondo */
+  color: #ffffff; /* Texto blanco */
+}
+
+/* Estilos para ion-title */
+ion-title {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Estilos para ion-card */
+ion-card {
+  background-color: #212121; /* Fondo más oscuro */
+  color: #ffffff; /* Texto blanco */
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2); /* Sombra blanca */
+  margin: 10px; /* Margen exterior */
+}
+
+/* Estilos para ion-card-content */
+ion-card-content {
+  padding: 16px;
+}
+
+/* Estilos para ion-img */
+ion-img {
+  max-width: 100%;
+  border-radius: 15px;
+}
+
+/* Estilos para ion-item */
+ion-item {
+  --ion-background-color: #212121; /* Fondo más oscuro */
+  border-radius: 10px;
+  margin-bottom: 16px;
+}
+
+/* Estilos para ion-input */
+ion-input {
+  font-family: 'Roboto', sans-serif;
+  color: #ffffff; /* Texto blanco */
+}
+
+/* Estilos para los botones */
+ion-button.custom-button {
+  --ion-color-base: #ffea00; /* Color base para el botón */
+  --ion-color-hover: #ffea00; /* Color al pasar el mouse */
+  --ion-color-focus: #ffea00; /* Color al enfocar */
+  --ion-color-pressed: #ffea00; /* Color al presionar */
+  --ion-color: #121212; /* Color del texto */
+  border-radius: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  margin: 10px; /* Margen exterior */
+}
+
+/* Estilos para los botones cuando están deshabilitados */
+ion-button.custom-button[disabled] {
+  --ion-color-base: #666666; /* Color base para el botón deshabilitado */
+  --ion-color: #666666; /* Color del texto deshabilitado */
+}
+
+

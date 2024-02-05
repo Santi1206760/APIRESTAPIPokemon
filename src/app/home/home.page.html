@@ -1,0 +1,65 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Pokémon Cards
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-grid>
+    <!-- Input para el número y nombre de Pokémon -->
+    <ion-row>
+      <ion-col size="12" size-md="6">
+        <ion-item>
+          <ion-label position="floating">Número de Pokémon</ion-label>
+          <ion-input type="number" [(ngModel)]="pokemonNumber" class="custom-input"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col size="12" size-md="6">
+        <ion-item>
+          <ion-label position="floating">Nombre del Pokémon</ion-label>
+          <ion-input [(ngModel)]="pokemonName" class="custom-input"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <!-- Cards de Pokémon -->
+    <ion-row>
+      <!-- Card por número -->
+      <ion-col size="12" size-md="6" class="ion-text-center">
+        <ion-card class="custom-card">
+          <ion-card-header>
+            Pokémon por número
+          </ion-card-header>
+          <ion-card-content>
+            <ion-img [src]="firstPokemon?.sprites.front_default" class="custom-image"></ion-img>
+            <!-- Puedes agregar más detalles del primer card según tus necesidades -->
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <!-- Card por nombre -->
+      <ion-col size="12" size-md="6" class="ion-text-center">
+        <ion-card class="custom-card">
+          <ion-card-header>
+            Pokémon por nombre
+          </ion-card-header>
+          <ion-card-content>
+            <ion-img [src]="secondPokemon?.sprites.front_default" class="custom-image"></ion-img>
+            <!-- Puedes agregar más detalles del segundo card según tus necesidades -->
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+    <!-- Botones para realizar las peticiones -->
+    <ion-row>
+      <ion-col size="12" size-md="6" class="ion-text-center">
+        <ion-button (click)="getPokemonByNumber()" expand="full" class="custom-button">Buscar por número</ion-button>
+      </ion-col>
+      <ion-col size="12" size-md="6" class="ion-text-center">
+        <ion-button (click)="getPokemonByName()" expand="full" class="custom-button">Buscar por nombre</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
